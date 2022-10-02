@@ -23,6 +23,6 @@ while (num > 0){
     num = Number(prompt("> "));
 }
 
-console.log(sum);
+console.log("And here is your sum! ") + console.log(sum);
 
 

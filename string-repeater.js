@@ -9,7 +9,8 @@
 // abcabcabc
 // abcabcabcabc
 
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')
+({sigint: true});
 
 let UserString = String(prompt("Enter a letter string: "));
 let Accumulator = UserString
@@ -17,6 +18,8 @@ let Accumulator = UserString
 while (Accumulator.length <= 10){
 
     Accumulator = Accumulator + UserString;
+    console.log(Accumulator);
+
 }
 
-console.log(UserString);
+

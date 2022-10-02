@@ -20,25 +20,24 @@
 // 8
 // 13
 // 21
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')
+({sigint: true});
 
-let DesiredSteps = Number(prompt("Enter a number. This will determine the number of steps the Fibonacci Sequence is calculated: "));
+let seriesLength = Number(prompt("Enter your desired Fibonacci Series length: > "));
 
-let x = 0
-let y = 1
-let z = ""
-let Accumulator = 0
+let Sum1 = 0; 
+let Sum2 = 1; 
+let nextNum = 0;
+let i = 1;
 
-let LoopCounter = 0
+console.log('Fibonacci Series:');
 
+for (let i = 1; i <= seriesLength; i++) {
 
-while LoopCounter < DesiredSteps
-    do
-        Accumulator = x + y
-        x = y
-        
+    console.log(nextNum);
 
-
-LoopCounter = LoopCounter + 1
-
+    nextNum = Sum1 + Sum2;
+    Sum1 = Sum2;
+    Sum2 = nextNum;
+}
 
